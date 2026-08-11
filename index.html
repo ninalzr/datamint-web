@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datamint — AI, machine learning and data engineering</title>
+<meta name="description" content="Datamint designs, builds and runs the AI, machine learning and data systems your business depends on. Solutions that reach production and keep working.">
+<meta name="theme-color" content="#F7F8F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1013" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Datamint — AI, machine learning and data engineering">
+<meta property="og:description" content="Raw data in. Decisions out. AI, machine learning and data solutions built to run in production.">
+<meta property="og:site_name" content="Datamint">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Scroll-reveal starts hidden and is un-hidden by script.js. Without JS the
+     page must still show all of its content. -->
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+
+<script>
+  // Set theme before paint so there is no flash of the wrong palette.
+  (function () {
+    try {
+      var saved = localStorage.getItem('datamint-theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) {}
+  })();
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Scroll thread: the page's organising device. Decorative; the header nav does the navigating. -->
+<div class="rail" id="rail" aria-hidden="true">
+  <div class="rail__track"><div class="rail__fill" id="railFill"></div></div>
+</div>
+
+<header class="header" id="header">
+  <div class="shell header__inner">
+    <a class="wordmark" href="#top" aria-label="Datamint, back to top">
+      <span class="wordmark__node" aria-hidden="true"></span>
+      datamint
+    </a>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="theme" id="themeToggle" type="button" aria-label="Switch to dark theme">
+        <svg class="theme__sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M12 2.6v2.4M12 19v2.4M2.6 12h2.4M19 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3L17 7M7 17l-1.7 1.7"/>
+          </g>
+        </svg>
+        <svg class="theme__moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path d="M20 14.2A8.2 8.2 0 019.8 4a8.4 8.4 0 106.9 12.8c1.2 0 2.3-.2 3.3-.6z" fill="currentColor"/>
+        </svg>
+      </button>
+      <a class="btn btn--solid" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ───────────────── Hero ───────────────── -->
+  <section class="hero" id="top">
+    <div class="shell">
+      <p class="eyebrow reveal">AI &nbsp;·&nbsp; Machine learning &nbsp;·&nbsp; Data engineering</p>
+
+      <h1 class="hero__title reveal">
+        Raw data in.<br>
+        <span class="hero__title-accent">Decisions out.</span>
+      </h1>
+
+      <p class="hero__lede reveal">
+        Datamint designs, builds and runs the AI, machine learning and data systems
+        your business depends on &mdash; solutions that reach production and keep
+        working once they get there.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--solid btn--lg" href="#contact">Book a call</a>
+        <a class="btn btn--ghost btn--lg" href="#services">See what we do</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── Services ───────────────── -->
+  <section class="section" id="services">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="label">Services</p>
+        <h2 class="section__title">Three things, done properly.</h2>
+      </div>
+
+      <ul class="rows">
+        <li class="row reveal">
+          <div class="row__lead">
+            <h3 class="row__title">AI Engineering</h3>
+            <p class="row__promise">Put models in front of real users, safely.</p>
+          </div>
+          <ul class="row__items">
+            <li>LLM applications and agents</li>
+            <li>Retrieval and RAG systems</li>
+            <li>Evaluation harnesses and guardrails</li>
+            <li>Human-in-the-loop review</li>
+          </ul>
+        </li>
+
+        <li class="row reveal">
+          <div class="row__lead">
+            <h3 class="row__title">Machine Learning</h3>
+            <p class="row__promise">Models that survive contact with production.</p>
+          </div>
+          <ul class="row__items">
+            <li>Forecasting and demand planning</li>
+            <li>Recommendation and ranking</li>
+            <li>Churn, risk and propensity</li>
+            <li>Training pipelines and retraining</li>
+          </ul>
+        </li>
+
+        <li class="row reveal">
+          <div class="row__lead">
+            <h3 class="row__title">Data Platforms</h3>
+            <p class="row__promise">The foundation everything else stands on.</p>
+          </div>
+          <ul class="row__items">
+            <li>Ingestion and ELT pipelines</li>
+            <li>Warehouse and lakehouse design</li>
+            <li>Data quality and observability</li>
+            <li>Metrics layer and self-serve BI</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────── Approach ───────────────── -->
+  <section class="section section--alt" id="approach">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="label">Approach</p>
+        <h2 class="section__title">Assess, build, hand over.</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__dot" aria-hidden="true"></span>
+          <p class="step__index">Step one</p>
+          <h3 class="step__title">Assess</h3>
+        </li>
+
+        <li class="step reveal">
+          <span class="step__dot" aria-hidden="true"></span>
+          <p class="step__index">Step two</p>
+          <h3 class="step__title">Build</h3>
+        </li>
+
+        <li class="step reveal">
+          <span class="step__dot" aria-hidden="true"></span>
+          <p class="step__index">Step three</p>
+          <h3 class="step__title">Operate</h3>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────────────── About + Contact ───────────────── -->
+  <section class="section closing" id="about">
+    <div class="shell">
+      <div class="closing__about reveal">
+        <p class="label">About</p>
+        <p class="closing__text">
+          Datamint closes the gap between a promising prototype and a system your
+          business can actually rely on. We start from the decision you are trying
+          to make, build the smallest thing that answers it, then make it sturdy
+          enough to run every day. What we leave behind runs in your own
+          infrastructure, documented and owned by you.
+        </p>
+      </div>
+
+      <div class="closing__cta reveal" id="contact">
+        <p class="label">Contact</p>
+        <h2 class="closing__title">Let&rsquo;s talk about your data.</h2>
+        <a class="closing__email" href="mailto:hello@datamint.com">hello@datamint.com</a>
+        <p class="closing__meta">
+          Tell us what decision you are trying to make. We will tell you whether we
+          can help, and what it would cost.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <a class="wordmark wordmark--sm" href="#top">
+      <span class="wordmark__node" aria-hidden="true"></span>
+      datamint
+    </a>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@datamint.com">Email</a>
+    </nav>
+    <p class="footer__legal">&copy; <span id="year">2026</span> Datamint</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
