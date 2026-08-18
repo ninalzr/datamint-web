@@ -125,6 +125,31 @@
   buildNodes();
   onScroll();
 
+  /* ── Email links ──────────────────────────────────────────────────────────
+     The markup carries the address in a human-readable, non-harvestable form
+     ("hello (at) datamint (dot) com"). Decode it back into a real address and
+     turn the placeholders into working mailto links. If the markup ever drifts
+     into something that is not an address, leave the fallback text alone. */
+
+  var emailEl = document.querySelector('[data-email]');
+
+  if (emailEl) {
+    var address = emailEl.textContent
+      .replace(/\(at\)/gi, '@')
+      .replace(/\(dot\)/gi, '.')
+      .replace(/\s+/g, '');
+
+    if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(address)) {
+      emailEl.textContent = address;
+      emailEl.href = 'mailto:' + address;
+
+      Array.prototype.forEach.call(
+        document.querySelectorAll('[data-email-link]'),
+        function (el) { el.href = 'mailto:' + address; }
+      );
+    }
+  }
+
   /* ── Footer year ──────────────────────────────────────────────────────── */
 
   var year = document.getElementById('year');

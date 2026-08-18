@@ -196,7 +196,12 @@
       <div class="closing__cta reveal" id="contact">
         <p class="label">Contact</p>
         <h2 class="closing__title">Let&rsquo;s talk about your data.</h2>
-        <a class="closing__email" href="mailto:hello@datamint.com">hello@datamint.com</a>
+        <!-- Deliberately not a harvestable string: the served markup holds no
+             plain address and no link protocol. script.js decodes the text below
+             into a real address and wires up the link. Without JS it stays
+             readable to a human, just not to a scraper. This element is the
+             single source of truth for the address — edit it here only. -->
+        <a class="closing__email" data-email>hello (at) datamint (dot) com</a>
         <p class="closing__meta">
           Tell us what decision you are trying to make. We will tell you whether we
           can help, and what it would cost.
@@ -217,7 +222,8 @@
       <a href="#services">Services</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
-      <a href="mailto:hello@datamint.com">Email</a>
+      <!-- Falls back to the contact block, which shows the address. -->
+      <a href="#contact" data-email-link>Email</a>
     </nav>
     <p class="footer__legal">&copy; <span id="year">2026</span> Datamint</p>
   </div>
