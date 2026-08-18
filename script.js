@@ -127,7 +127,7 @@
 
   /* ── Email links ──────────────────────────────────────────────────────────
      The markup carries the address in a human-readable, non-harvestable form
-     ("hello (at) datamint (dot) com"). Decode it back into a real address and
+     ("hello (at) datamint (dot) ro"). Decode it back into a real address and
      turn the placeholders into working mailto links. If the markup ever drifts
      into something that is not an address, leave the fallback text alone. */
 
